@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.okcomputers.login_design.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/firebase" />
+
+    <EditText
+        android:id="@+id/EmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/edittext_background"
+        android:textColor="@android:color/black"
+        android:padding="15dp"
+        android:layout_marginTop="78dp"
+        android:layout_margin="20dp"
+        android:hint="Enter Email" />
+
+    <EditText
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp"
+        android:id="@+id/PasswordTextView"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_below="@id/EmailText"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/Loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#2196F9"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/PasswordTextView"/>
+</RelativeLayout>
